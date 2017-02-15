@@ -5,3 +5,5 @@ Linked-List - Project implementing Linked List.
 Permutations - A program to print all permutations of a given string.
 
 HashTable - HashTable implementation program.
+
+QueueArray - Array implementation of Queue.
