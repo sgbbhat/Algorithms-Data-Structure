@@ -1,6 +1,6 @@
-23:43:29 **** Incremental Build of configuration Debug for project Dynamic-Prog-Fibo ****
+23:51:16 **** Incremental Build of configuration Debug for project Dynamic-Prog-Fibo ****
 make all 
 make: Nothing to be done for 'all'.
 
-23:43:29 Build Finished (took 75ms)
+23:51:16 Build Finished (took 75ms)
 

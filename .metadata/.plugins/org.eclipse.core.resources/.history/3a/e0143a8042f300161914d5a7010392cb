@@ -32,7 +32,6 @@ int fib(int n)
          lookup[n] = n;
       else
          lookup[n] = fib(n-1) + fib(n-2);
-      cout<<lookup[n]<<endl;
    }
 
    return lookup[n];
@@ -41,6 +40,6 @@ int fib(int n)
 int main() {
 	  int n = 40;
 	  _initialize();
-	  cout<<"Fibonacci number is %d "<< fib(n)<<endl;
+	  printf("Fibonacci number is %d ", fib(n));
 	  return 0;
 }

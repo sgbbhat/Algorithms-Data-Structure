@@ -32,7 +32,7 @@ int fib(int n)
          lookup[n] = n;
       else
          lookup[n] = fib(n-1) + fib(n-2);
-      cout<<lookup[n]<<endl;
+      cout<<lookup[n];
    }
 
    return lookup[n];
