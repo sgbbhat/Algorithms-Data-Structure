@@ -1,0 +1,15 @@
+15:47:34 **** Incremental Build of configuration Debug for project QueueLinkedList ****
+make all 
+Building file: ../src/main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: QueueLinkedList
+Invoking: Cross G++ Linker
+g++  -o "QueueLinkedList"  ./src/Queue.o ./src/main.o   
+Finished building target: QueueLinkedList
+ 
+
+15:47:34 Build Finished (took 465ms)
+

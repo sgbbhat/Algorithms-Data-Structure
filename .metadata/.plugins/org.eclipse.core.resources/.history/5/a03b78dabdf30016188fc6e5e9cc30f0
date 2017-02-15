@@ -1,0 +1,19 @@
+/*
+ * Queue.cpp
+ *
+ *  Created on: Feb 15, 2017
+ *      Author: shreeganesh
+ */
+
+#include <iostream>
+#include "Queue.h"
+
+Queue::Queue() {
+	head = NULL;
+
+}
+
+Queue::~Queue() {
+	// TODO Auto-generated destructor stub
+}
+

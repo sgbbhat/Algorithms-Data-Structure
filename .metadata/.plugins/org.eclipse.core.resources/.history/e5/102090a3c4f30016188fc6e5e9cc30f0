@@ -1,0 +1,61 @@
+/*
+ * Queue.cpp
+ *
+ *  Created on: Feb 15, 2017
+ *      Author: shreeganesh
+ */
+
+#include <iostream>
+#include "Queue.h"
+
+using namespace std;
+
+Queue::Queue() {
+	head = NULL;
+	temp = NULL;
+	front = NULL;
+	rear = NULL;;
+}
+
+Queue::~Queue() {
+}
+
+bool Queue::IsEmpty()
+{
+	if(head == NULL)
+		return true;
+	else
+		return false;
+}
+
+void Queue::Enqueue(int value)
+{
+	node * temp = (node *) malloc(sizeof(node*)) ;
+	temp->value = value;
+	temp->next = NULL;
+
+	if(front == NULL && rear == NULL)
+	{
+		head = n;
+		temp = head;
+	}
+	else
+	{
+		temp = head;
+		while(temp->next != NULL)
+		{
+			temp = temp->next;
+		}
+		n = temp;
+	}
+}
+
+void Queue::PrintQueue()
+{
+	temp = head;
+	while(temp != NULL)
+	{
+		cout<<temp->value<<endl;
+		temp = temp->next;
+	}
+}

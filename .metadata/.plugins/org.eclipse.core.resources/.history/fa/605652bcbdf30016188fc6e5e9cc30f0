@@ -1,0 +1,23 @@
+/*
+ * Queue.h
+ *
+ *  Created on: Feb 15, 2017
+ *      Author: shreeganesh
+ */
+
+#ifndef QUEUE_H_
+#define QUEUE_H_
+
+struct node
+{
+	int value;
+	node * next;
+};
+
+class Queue {
+public:
+	Queue();
+	virtual ~Queue();
+};
+
+#endif /* QUEUE_H_ */
