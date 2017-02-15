@@ -34,3 +34,15 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64
 
 !ENTRY org.eclipse.cdt.core 1 0 2017-02-14 22:36:35.690
 !MESSAGE Indexed 'HashTable' (1 sources, 0 headers) in 0.00 sec: 1 declarations; 0 references; 1 unresolved inclusions; 0 syntax errors; 3 unresolved names (75.00%)
+!SESSION 2017-02-14 22:37:40.742 -----------------------------------------------
+eclipse.buildId=debbuild
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-02-14 23:33:42.609
+!MESSAGE Indexed 'DPMemoization' (1 sources, 0 headers) in 0.01 sec: 1 declarations; 0 references; 1 unresolved inclusions; 0 syntax errors; 3 unresolved names (75.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-02-14 23:36:11.182
+!MESSAGE Indexed 'Dynamic-Prog-Fibo' (1 sources, 0 headers) in 0.04 sec: 1 declarations; 0 references; 1 unresolved inclusions; 0 syntax errors; 3 unresolved names (75.00%)
