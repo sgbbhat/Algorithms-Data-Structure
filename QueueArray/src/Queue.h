@@ -19,8 +19,10 @@ public:
 	Queue();
 	virtual ~Queue();
 	bool IsEmpty();
+	bool IsFull();
 	void Enqueue(int value);
 	void Dequeue();
+	int Front();
 };
 
 #endif /* QUEUE_H_ */

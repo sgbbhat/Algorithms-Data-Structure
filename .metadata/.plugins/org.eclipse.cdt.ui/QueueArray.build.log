@@ -1,9 +1,14 @@
-11:50:58 **** Incremental Build of configuration Debug for project QueueArray ****
+12:48:30 **** Incremental Build of configuration Debug for project QueueArray ****
 make all 
 Building file: ../src/Queue.cpp
 Invoking: Cross G++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Queue.d" -MT"src/Queue.d" -o "src/Queue.o" "../src/Queue.cpp"
 Finished building: ../src/Queue.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
  
 Building target: QueueArray
 Invoking: Cross G++ Linker
@@ -11,5 +16,5 @@ g++  -o "QueueArray"  ./src/Queue.o ./src/main.o
 Finished building target: QueueArray
  
 
-11:50:58 Build Finished (took 176ms)
+12:48:31 Build Finished (took 667ms)
 

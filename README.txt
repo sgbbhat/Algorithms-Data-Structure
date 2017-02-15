@@ -6,4 +6,4 @@ Permutations - A program to print all permutations of a given string.
 
 HashTable - HashTable implementation program.
 
-QueueArray - Array implementation of Queue.
+QueueArray - Implementation of Queue using circular Array.
