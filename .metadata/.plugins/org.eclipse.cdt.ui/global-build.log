@@ -1,0 +1,17 @@
+22:26:38 **** Incremental Build of configuration Debug for project Linked-List ****
+make all 
+Building file: ../src/list.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/list.d" -MT"src/list.d" -o "src/list.o" "../src/list.cpp"
+Finished building: ../src/list.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: Linked-List
+Invoking: Cross G++ Linker
+g++  -o "Linked-List"  ./src/list.o ./src/main.o   
+Finished building target: Linked-List
+ 
