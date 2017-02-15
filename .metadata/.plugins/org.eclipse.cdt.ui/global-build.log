@@ -1,24 +1,4 @@
-22:30:53 **** Incremental Build of configuration Debug for project Binary-Search-Tree ****
-make all 
-make: Nothing to be done for 'all'.
-22:30:53 **** Incremental Build of configuration Debug for project Linked-List ****
-make all 
-make: Nothing to be done for 'all'.
-22:30:53 **** Build of configuration Debug for project Permutation ****
-make all 
-Building file: ../src/Permutation.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Permutation.d" -MT"src/Permutation.d" -o "src/Permutation.o" "../src/Permutation.cpp"
-Finished building: ../src/Permutation.cpp
+22:32:48 **** Clean-only build of configuration Debug for project Permutation ****
+make clean 
+rm -rf  ./src/Permutation.o  ./src/Permutation.d  Permutation
  
-Building target: Permutation
-Invoking: Cross G++ Linker
-g++  -o "Permutation"  ./src/Permutation.o   
-Finished building target: Permutation
- 
-22:30:54 **** Incremental Build of configuration Debug for project StackClass ****
-make all 
-make: Nothing to be done for 'all'.
-22:31:09 **** Incremental Build of configuration Debug for project Permutation ****
-make all 
-make: Nothing to be done for 'all'.

@@ -1,6 +1,7 @@
-22:31:09 **** Incremental Build of configuration Debug for project Permutation ****
-make all 
-make: Nothing to be done for 'all'.
+22:32:48 **** Clean-only build of configuration Debug for project Permutation ****
+make clean 
+rm -rf  ./src/Permutation.o  ./src/Permutation.d  Permutation
+ 
 
-22:31:09 Build Finished (took 66ms)
+22:32:48 Build Finished (took 63ms)
 
