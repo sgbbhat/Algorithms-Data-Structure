@@ -2,3 +2,6 @@
 make clean 
 rm -rf  ./src/hash.o ./src/main.o  ./src/hash.d ./src/main.d  HashTable
  
+
+22:39:05 Build Finished (took 59ms)
+
