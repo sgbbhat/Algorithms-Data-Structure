@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;QueueArray/src/QueueArray.cpp&apos; to &apos;main.cpp&apos;" description="Rename resource &apos;QueueArray.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/QueueArray.cpp" name="main.cpp" stamp="1487179507779" updateReferences="true"/>
+</session>

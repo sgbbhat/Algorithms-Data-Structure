@@ -1,0 +1,26 @@
+/*
+ * Queue.h
+ *
+ *  Created on: Feb 15, 2017
+ *      Author: shreeganesh
+ */
+
+#ifndef QUEUE_H_
+#define QUEUE_H_
+#define QUEUE_SIZE 10
+
+class Queue {
+private:
+	int queue ;
+	int front ;
+	int rear ;
+
+public:
+	Queue(int size);
+	virtual ~Queue();
+	bool IsEmpty();
+	void Enqueue(int value);
+	void Dequeue();
+};
+
+#endif /* QUEUE_H_ */

@@ -1,5 +1,5 @@
 //============================================================================
-// Name        : DPMemoization.cpp
+// Name        : QueueArray.cpp
 // Author      : 
 // Version     :
 // Copyright   : Your copyright notice
@@ -7,11 +7,13 @@
 //============================================================================
 
 #include <iostream>
+#include <>
+
 using namespace std;
 
-
-
 int main() {
-	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	int queue[10] = {0};
+	int front = -1;
+	int rear = -1;
 	return 0;
 }

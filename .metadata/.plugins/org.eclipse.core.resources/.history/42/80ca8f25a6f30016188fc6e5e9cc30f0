@@ -1,0 +1,20 @@
+/*
+ * Queue.cpp
+ *
+ *  Created on: Feb 15, 2017
+ *      Author: shreeganesh
+ */
+
+#include "Queue.h"
+
+Queue::Queue(int size) {
+	// TODO Auto-generated constructor stub
+	int queue[] = new queue[size];
+	int front = -1;
+	int rear = -1;
+}
+
+Queue::~Queue() {
+	// TODO Auto-generated destructor stub
+}
+
