@@ -7,7 +7,7 @@
 //============================================================================
 
 #include <iostream>
-#include<stdio.h>
+#include <stdio.h>
 #define NIL -1
 #define MAX 100
 

@@ -1,6 +1,15 @@
-23:51:16 **** Incremental Build of configuration Debug for project Dynamic-Prog-Fibo ****
+21:39:57 **** Build of configuration Debug for project Dynamic-Prog-Fibo ****
 make all 
-make: Nothing to be done for 'all'.
+Building file: ../src/Dynamic-Prog-Fibo.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Dynamic-Prog-Fibo.d" -MT"src/Dynamic-Prog-Fibo.d" -o "src/Dynamic-Prog-Fibo.o" "../src/Dynamic-Prog-Fibo.cpp"
+Finished building: ../src/Dynamic-Prog-Fibo.cpp
+ 
+Building target: Dynamic-Prog-Fibo
+Invoking: Cross G++ Linker
+g++  -o "Dynamic-Prog-Fibo"  ./src/Dynamic-Prog-Fibo.o   
+Finished building target: Dynamic-Prog-Fibo
+ 
 
-23:51:16 Build Finished (took 75ms)
+21:39:59 Build Finished (took 2s.791ms)
 

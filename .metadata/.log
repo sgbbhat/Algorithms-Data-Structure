@@ -262,3 +262,66 @@ java.lang.IllegalArgumentException:
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1414)
+!SESSION 2017-02-16 23:03:14.104 -----------------------------------------------
+eclipse.buildId=debbuild
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-02-16 23:03:21.440
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-02-17 00:27:58.949
+!MESSAGE Indexed 'Huffman' (1 sources, 0 headers) in 0.12 sec: 1 declarations; 0 references; 1 unresolved inclusions; 0 syntax errors; 3 unresolved names (75.00%)
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-02-17 00:40:40.626
+!MESSAGE Error: Encountered an ambiguous node "sizeof(_CharT)" at /usr/include/c++/6/bits/regex_compiler.h, line 461 while parsing /home/shreeganesh/Documents/C++/Algorithms-Data-Structure/Huffman/src/main.cpp
+!STACK 0
+org.eclipse.cdt.internal.core.parser.ParserException: Encountered an ambiguous node "sizeof(_CharT)" at /usr/include/c++/6/bits/regex_compiler.h, line 461 while parsing /home/shreeganesh/Documents/C++/Algorithms-Data-Structure/Huffman/src/main.cpp
+	at org.eclipse.cdt.internal.core.dom.parser.ASTAmbiguousNode.logAmbiguousNodeError(ASTAmbiguousNode.java:182)
+	at org.eclipse.cdt.internal.core.dom.parser.ASTAmbiguousNode.getEvaluation(ASTAmbiguousNode.java:177)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTBinaryExpression.computeEvaluation(CPPASTBinaryExpression.java:278)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTBinaryExpression.getEvaluation(CPPASTBinaryExpression.java:269)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTBinaryExpression.computeEvaluation(CPPASTBinaryExpression.java:278)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTBinaryExpression.getEvaluation(CPPASTBinaryExpression.java:269)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTUnaryExpression.computeEvaluation(CPPASTUnaryExpression.java:186)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTUnaryExpression.getEvaluation(CPPASTUnaryExpression.java:177)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTBinaryExpression.computeEvaluation(CPPASTBinaryExpression.java:278)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTBinaryExpression.getEvaluation(CPPASTBinaryExpression.java:269)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPFunction.getReturnExpression(CPPFunction.java:666)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPFunction.getReturnExpression(CPPFunction.java:644)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPFunction.getReturnExpression(CPPFunction.java:673)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.semantics.EvalFunctionCall.computeForFunctionCall(EvalFunctionCall.java:244)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.semantics.EvalFunctionCall.getValue(EvalFunctionCall.java:150)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPTemplateNonTypeArgument.<init>(CPPTemplateNonTypeArgument.java:38)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.semantics.CPPTemplates.createTemplateArgumentArray(CPPTemplates.java:1927)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.semantics.CPPTemplates.createBinding(CPPTemplates.java:732)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTTemplateId.createIntermediateBinding(CPPASTTemplateId.java:124)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTNameBase.resolvePreBinding(CPPASTNameBase.java:79)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTQualifiedName.resolvePreBinding(CPPASTQualifiedName.java:98)
+	at org.eclipse.cdt.internal.core.dom.parser.ASTAmbiguousNode.doResolveAmbiguity(ASTAmbiguousNode.java:126)
+	at org.eclipse.cdt.internal.core.dom.parser.ASTAmbiguousNode.resolveAmbiguity(ASTAmbiguousNode.java:83)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTAmbiguityResolver.visit(CPPASTAmbiguityResolver.java:62)
+	at org.eclipse.cdt.internal.core.dom.parser.ASTAmbiguousNode.accept(ASTAmbiguousNode.java:66)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTTemplateId.accept(CPPASTTemplateId.java:184)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTQualifiedName.accept(CPPASTQualifiedName.java:258)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTNamedTypeSpecifier.accept(CPPASTNamedTypeSpecifier.java:92)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTSimpleDeclaration.accept(CPPASTSimpleDeclaration.java:102)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTCompositeTypeSpecifier.accept(CPPASTCompositeTypeSpecifier.java:193)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTSimpleDeclaration.accept(CPPASTSimpleDeclaration.java:102)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTTemplateDeclaration.accept(CPPASTTemplateDeclaration.java:123)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTNamespaceDefinition.accept(CPPASTNamespaceDefinition.java:135)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTNamespaceDefinition.accept(CPPASTNamespaceDefinition.java:135)
+	at org.eclipse.cdt.internal.core.dom.parser.ASTTranslationUnit.accept(ASTTranslationUnit.java:265)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTTranslationUnit.resolveAmbiguities(CPPASTTranslationUnit.java:188)
+	at org.eclipse.cdt.internal.core.dom.parser.AbstractGNUSourceCodeParser.resolveAmbiguities(AbstractGNUSourceCodeParser.java:672)
+	at org.eclipse.cdt.internal.core.dom.parser.AbstractGNUSourceCodeParser.parse(AbstractGNUSourceCodeParser.java:660)
+	at org.eclipse.cdt.core.dom.parser.AbstractCLikeLanguage.getASTTranslationUnit(AbstractCLikeLanguage.java:165)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.createAST(AbstractIndexerTask.java:1186)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1044)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:857)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:537)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)

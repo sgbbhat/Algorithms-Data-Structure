@@ -1,0 +1,28 @@
+//============================================================================
+// Name        : Huffman.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <algorithm>
+#include <queue>
+#include <string>
+#include <sstream>
+
+#define SENTINAL '\n'
+
+using namespace std;
+
+int main() {
+	cout << "Huffman coding algorithm" << endl;
+	int menu = 1;
+
+	while(menu == 1)
+	{
+
+	}
+	return 0;
+}
