@@ -13,63 +13,62 @@ using namespace std;
 
 List::List()
 {
-	head = NULL;
-	curr = NULL;
-	temp = NULL;
+	headptr = NULL;
+	currptr = NULL;
+	tempptr = NULL;
 }
 
 // Adding a node to the linked list
 void List::addNode(int addData)
 {
-	nodePtr n = new node;
+	node * n = new node;
 	n->next = NULL;
 	n->data = addData;
 
-	if(head != NULL)
+	if(headptr != NULL)
 	{
-		curr = head;
-		while(curr->next != NULL)
+		currptr = headptr;
+		while(currptr->next != NULL)
 		{
-			curr = curr->next;
+			currptr = currptr->next;
 		}
-		curr->next = n;
+		currptr->next = n;
 	}
 	else
 	{
-		head = n;			// In new node created is the first node
+		headptr = n;			// In new node created is the first node
 	}
 }
-
 
 // Deleting a node from the list
 void List::delData(int delData)
 {
-	nodePtr delPtr = NULL;
-	temp = head;
-	curr = head;
+	node * delptr = NULL;
+	tempptr = headptr;
+	currptr = headptr;
 
-	while(curr != NULL && curr->data != delData)
+	while(currptr != NULL && currptr->data != delData)
 	{
-		temp = curr;
-		curr = curr->next;
+		tempptr = currptr;
+		currptr = currptr->next;
 	}
 
-	if(curr == NULL)
+	if(currptr == NULL)
 	{
 		cout << delData <<" was not on the list\n";
-		delete delPtr;
+		delete delptr;
 	}
 	else
 	{
-		delPtr = curr;
-		curr = curr->next;
-		temp->next = curr;
-		if(delPtr == head)
+		delptr = currptr;
+		currptr = currptr->next;
+		tempptr->next = currptr;
+		if(delptr == headptr)
 		{
-			head = head->next;
-			temp = NULL;
+			headptr = headptr->next;
+			tempptr = NULL;
 		}
-		delete delPtr;
+		delete delptr;
 		cout << delData <<" was deleted\n";
 	}
 }
@@ -77,10 +76,10 @@ void List::delData(int delData)
 // Print the entire list
 void List::printList()
 {
-	curr = head;
-	while(curr != NULL)
+	currptr = headptr;
+	while(currptr != NULL)
 	{
-		cout << curr->data <<endl;
-		curr = curr->next;
+		cout << currptr->data <<endl;
+		currptr = currptr->next;
 	}
 }

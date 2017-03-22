@@ -1,0 +1,106 @@
+//============================================================================
+// Name        : List-Linked.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+class LinkedList
+{
+private:
+	typedef struct node
+	{
+		int data;
+		node * next;
+	} * nodeptr;
+
+	nodeptr currptr;
+	nodeptr headptr;
+	nodeptr tempptr;
+
+public:
+	LinkedList();
+	void addNode(int Data);
+	void deleteNode(int Data);
+	void printList();
+};
+
+void LinkedList::LinkedList()
+{
+	currptr = NULL;
+	headptr = NULL;
+	tempptr = NULL;
+}
+
+void LinkedList::addNode(int Data)
+{
+	nodeptr n = new node();
+	n->data = Data;
+	n->next = NULL;
+
+	currptr = headptr;
+
+	if(headptr != NULL)
+	{
+		while(currptr != NULL)
+		{
+			currptr = currptr->next;
+		}
+		currptr->next = n;
+	}
+	else
+	{
+		headptr = n;
+	}
+}
+
+void LinkedList::deleteNode(int Data)
+{
+	nodeptr delptr = new node();
+	currptr = headptr ;
+	tempptr = headptr ;
+
+	while(currptr->next != NULL && currptr->data != Data)
+	{
+		tempptr = currptr ;
+		currptr = currptr->next;
+	}
+
+	if(currptr == NULL)
+	{
+		cout <<Data<<" could not be found"<<endl;
+		delete delptr;
+	}
+	else
+	{
+		delptr = currptr;
+		currptr = currptr->next;
+		tempptr->next = currptr;
+
+		if(delptr == headptr)
+		{
+			headptr = headptr->next;
+			tempptr = NULL;
+		}
+		delete delptr;
+	}
+}
+
+void LinkedList::printList()
+{
+	currptr = headptr;
+	do
+	{
+		cout<< currptr->data<<endl;
+		currptr = currptr->next;
+	}while(currptr->next != NULL)
+}
+
+int main() {
+
+	return 0;
+}

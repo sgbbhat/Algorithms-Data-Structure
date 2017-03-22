@@ -8,17 +8,18 @@
 </perspectiveBar>
 <coolbarLayout>
 <coolItem id="group.file" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="306" y="38"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="276" y="38"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.cdt.ui.CElementCreationActionSet" itemType="typeToolBarContribution" x="226" y="38"/>
 <coolItem id="org.eclipse.debug.ui.launch.toolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="174" y="38"/>
 <coolItem id="org.eclipse.debug.ui.main.toolbar" itemType="typeToolBarContribution" x="48" y="38"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="100" y="38"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="275" y="38"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="305" y="38"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="256" y="38"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.cdt.make.editor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.cdt.ui.editor.CEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -30,34 +31,15 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
-<part id="1"/>
-<part id="2"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.cpp" partName="main.cpp" path="/home/shreeganesh/Documents/C++/Algorithms-Data-Structure/QueueLinkedList/src/main.cpp" title="main.cpp" tooltip="QueueLinkedList/src/main.cpp" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QueueLinkedList/src/main.cpp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="424" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="Queue.cpp" partName="Queue.cpp" path="/home/shreeganesh/Documents/C++/Algorithms-Data-Structure/QueueLinkedList/src/Queue.cpp" title="Queue.cpp" tooltip="QueueLinkedList/src/Queue.cpp" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QueueLinkedList/src/Queue.cpp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="946" selectionTopPixel="602"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="Queue.h" partName="Queue.h" path="/home/shreeganesh/Documents/C++/Algorithms-Data-Structure/QueueLinkedList/src/Queue.h" title="Queue.h" tooltip="QueueLinkedList/src/Queue.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QueueLinkedList/src/Queue.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="331" selectionTopPixel="0"/>
-</editor>
 </editors>
 <views>
 <view id="org.eclipse.ui.views.PropertySheet" partName="Properties"/>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>
-<category IMemento.internal.id="Errors"/>
-<category IMemento.internal.id="Errors (3 items)"/>
-<category IMemento.internal.id="Warnings"/>
-</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="284" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -89,7 +71,7 @@
 <viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.cdt.ui.cview.groupincludes="false" org.eclipse.cdt.ui.cview.groupmacros="false" org.eclipse.cdt.ui.editor.CUChildren="true" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.cdt.ui.editor.CEditor" activePerspective="org.eclipse.cdt.ui.CPerspective">
+<perspectives activePart="org.eclipse.ui.navigator.ProjectExplorer" activePerspective="org.eclipse.cdt.ui.CPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.ui.internal.ide.application.ResourcePerspective" id="org.eclipse.ui.resourcePerspective" label="Resource"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -266,159 +248,165 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/QueueLinkedList/src/main.cpp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/QueueLinkedList/src/Queue.cpp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/QueueLinkedList/src/Queue.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Linked-List/src/list.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/List-Linked/src/List-Linked.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.make.editor" path="/List-Linked/Debug/src/subdir.mk"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Linked-List/src/list.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Linked-List/src/list.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Linked-List/src/list.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/HashTable/src/hash.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/HashTable/src/hash.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/HashTable/src/hash.h"/>
 </editors>
-<item historyLabel="Queue.h" index="2">
-<position info="not_deleted" x="331" y="0"/>
+<item historyLabel="List-Linked.cpp" index="1">
+<position info="not_deleted" x="505" y="0"/>
 </item>
-<item historyLabel="Queue.cpp" index="1">
-<position info="not_deleted" x="902" y="0"/>
+<item historyLabel="List-Linked.cpp" index="1">
+<position info="not_deleted" x="723" y="0"/>
 </item>
-<item historyLabel="Queue.cpp" index="1">
-<position info="not_deleted" x="636" y="0"/>
+<item historyLabel="List-Linked.cpp" index="1">
+<position info="not_deleted" x="801" y="0"/>
 </item>
-<item historyLabel="Queue.cpp" index="1">
-<position info="not_deleted" x="316" y="0"/>
+<item historyLabel="List-Linked.cpp" index="1">
+<position info="not_deleted" x="936" y="0"/>
 </item>
-<item historyLabel="Queue.cpp" index="1">
-<position info="not_deleted" x="559" y="0"/>
+<item historyLabel="list.cpp" index="0">
+<position info="not_deleted" x="566" y="0"/>
 </item>
-<item historyLabel="Queue.cpp" index="1">
+<item historyLabel="List-Linked.cpp" index="1">
+<position info="not_deleted" x="936" y="0"/>
+</item>
+<item historyLabel="list.cpp" index="0">
+<position info="not_deleted" x="566" y="0"/>
+</item>
+<item historyLabel="List-Linked.cpp" index="1">
+<position info="not_deleted" x="936" y="0"/>
+</item>
+<item historyLabel="list.cpp" index="0">
+<position info="not_deleted" x="566" y="0"/>
+</item>
+<item historyLabel="List-Linked.cpp" index="1">
+<position info="not_deleted" x="936" y="0"/>
+</item>
+<item historyLabel="list.cpp" index="0">
+<position info="not_deleted" x="566" y="0"/>
+</item>
+<item historyLabel="List-Linked.cpp" index="1">
+<position info="not_deleted" x="936" y="0"/>
+</item>
+<item historyLabel="List-Linked.cpp" index="1">
+<position info="not_deleted" x="1046" y="0"/>
+</item>
+<item historyLabel="List-Linked.cpp" index="1">
+<position info="not_deleted" x="1145" y="0"/>
+</item>
+<item historyLabel="List-Linked.cpp" index="1">
+<position info="not_deleted" x="1222" y="0"/>
+</item>
+<item historyLabel="List-Linked.cpp" index="1">
+<position info="not_deleted" x="1319" y="0"/>
+</item>
+<item historyLabel="list.cpp" index="0">
+<position info="not_deleted" x="1048" y="0"/>
+</item>
+<item historyLabel="List-Linked.cpp" index="1">
+<position info="not_deleted" x="1470" y="0"/>
+</item>
+<item historyLabel="list.cpp" index="0">
+<position info="not_deleted" x="1162" y="0"/>
+</item>
+<item historyLabel="List-Linked.cpp" index="1">
+<position info="not_deleted" x="1770" y="0"/>
+</item>
+<item historyLabel="list.cpp" index="0">
+<position info="not_deleted" x="1279" y="0"/>
+</item>
+<item historyLabel="List-Linked.cpp" index="1">
+<position info="not_deleted" x="1770" y="0"/>
+</item>
+<item historyLabel="List-Linked.cpp" index="1">
+<position info="not_deleted" x="577" y="0"/>
+</item>
+<item historyLabel="List-Linked.cpp" index="1">
+<position info="not_deleted" x="1744" y="0"/>
+</item>
+<item historyLabel="subdir.mk" index="2">
+<position info="not_deleted" x="489" y="26"/>
+</item>
+<item historyLabel="List-Linked.cpp" index="1">
+<position info="not_deleted" x="1770" y="0"/>
+</item>
+<item historyLabel="List-Linked.cpp" index="1">
+<position info="not_deleted" x="944" y="0"/>
+</item>
+<item historyLabel="list.cpp" index="3">
+<position info="not_deleted" x="3" y="0"/>
+</item>
+<item historyLabel="List-Linked.cpp" index="1">
+<position info="not_deleted" x="613" y="0"/>
+</item>
+<item historyLabel="list.cpp" index="3">
+<position info="not_deleted" x="3" y="0"/>
+</item>
+<item historyLabel="List-Linked.cpp" index="1">
+<position info="not_deleted" x="613" y="0"/>
+</item>
+<item historyLabel="list.cpp" index="3">
+<position info="not_deleted" x="3" y="0"/>
+</item>
+<item historyLabel="list.h" index="4">
 <position/>
 </item>
-<item historyLabel="main.cpp" index="0">
-<position info="not_deleted" x="79" y="0"/>
+<item historyLabel="list.cpp" index="3">
+<position info="not_deleted" x="12" y="0"/>
 </item>
-<item historyLabel="Queue.h" index="2">
-<position info="not_deleted" x="220" y="0"/>
+<item historyLabel="List-Linked.cpp" index="1">
+<position info="not_deleted" x="663" y="0"/>
 </item>
-<item historyLabel="Queue.cpp" index="1">
-<position info="not_deleted" x="902" y="0"/>
+<item historyLabel="list.cpp" index="3">
+<position info="not_deleted" x="470" y="0"/>
 </item>
-<item historyLabel="main.cpp" index="0">
-<position info="not_deleted" x="79" y="0"/>
+<item historyLabel="List-Linked.cpp" index="1">
+<position info="not_deleted" x="857" y="0"/>
 </item>
-<item historyLabel="Queue.h" index="2">
-<position info="not_deleted" x="220" y="0"/>
+<item historyLabel="list.h" index="4">
+<position info="not_deleted" x="221" y="0"/>
 </item>
-<item historyLabel="Queue.h" index="2">
-<position/>
+<item historyLabel="List-Linked.cpp" index="1">
+<position info="not_deleted" x="857" y="0"/>
 </item>
-<item historyLabel="Queue.cpp" index="1">
-<position info="not_deleted" x="902" y="0"/>
+<item historyLabel="list.cpp" index="5">
+<position info="not_deleted" x="566" y="0"/>
 </item>
-<item historyLabel="Queue.cpp" index="1">
-<position info="not_deleted" x="189" y="0"/>
+<item historyLabel="List-Linked.cpp" index="1">
+<position info="not_deleted" x="857" y="0"/>
 </item>
-<item historyLabel="main.cpp" index="0">
-<position info="not_deleted" x="79" y="0"/>
+<item historyLabel="list.cpp" index="5">
+<position info="not_deleted" x="566" y="0"/>
 </item>
-<item historyLabel="main.cpp" index="0">
-<position info="not_deleted" x="666" y="0"/>
+<item historyLabel="List-Linked.cpp" index="1">
+<position info="not_deleted" x="857" y="0"/>
 </item>
-<item historyLabel="main.cpp" index="0">
-<position info="not_deleted" x="356" y="0"/>
+<item historyLabel="list.cpp" index="5">
+<position info="not_deleted" x="418" y="6"/>
 </item>
-<item historyLabel="Queue.cpp" index="1">
-<position info="not_deleted" x="189" y="0"/>
+<item historyLabel="List-Linked.cpp" index="1">
+<position info="not_deleted" x="689" y="70"/>
 </item>
-<item historyLabel="Queue.h" index="2">
-<position/>
+<item historyLabel="list.cpp" index="5">
+<position info="not_deleted" x="180" y="0"/>
 </item>
-<item historyLabel="Queue.cpp" index="1">
-<position info="not_deleted" x="525" y="0"/>
+<item historyLabel="List-Linked.cpp" index="1">
+<position info="not_deleted" x="1784" y="0"/>
 </item>
-<item historyLabel="main.cpp" index="0">
-<position info="not_deleted" x="424" y="0"/>
+<item historyLabel="hash.h" index="6">
+<position info="not_deleted" x="1428" y="0"/>
 </item>
-<item historyLabel="Queue.cpp" index="1">
-<position/>
+<item historyLabel="hash.cpp" index="7">
+<position info="not_deleted" x="3" y="0"/>
 </item>
-<item historyLabel="main.cpp" index="0">
-<position info="not_deleted" x="378" y="0"/>
-</item>
-<item historyLabel="Queue.cpp" index="1">
-<position info="not_deleted" x="597" y="0"/>
-</item>
-<item historyLabel="Queue.h" index="2">
-<position/>
-</item>
-<item historyLabel="Queue.cpp" index="1">
-<position info="not_deleted" x="597" y="0"/>
-</item>
-<item historyLabel="Queue.h" index="2">
-<position/>
-</item>
-<item historyLabel="Queue.cpp" index="1">
-<position info="not_deleted" x="597" y="0"/>
-</item>
-<item historyLabel="Queue.cpp" index="1">
-<position info="not_deleted" x="479" y="0"/>
-</item>
-<item historyLabel="Queue.cpp" index="1">
-<position info="not_deleted" x="559" y="0"/>
-</item>
-<item historyLabel="main.cpp" index="0">
-<position info="not_deleted" x="378" y="0"/>
-</item>
-<item historyLabel="Queue.cpp" index="1">
-<position info="not_deleted" x="559" y="0"/>
-</item>
-<item historyLabel="Queue.h" index="2">
-<position info="not_deleted" x="192" y="28"/>
-</item>
-<item historyLabel="Queue.cpp" index="1">
-<position/>
-</item>
-<item historyLabel="main.cpp" index="0">
-<position info="not_deleted" x="378" y="0"/>
-</item>
-<item historyLabel="Queue.cpp" index="1">
-<position/>
-</item>
-<item historyLabel="Queue.h" index="2">
-<position info="not_deleted" x="191" y="0"/>
-</item>
-<item historyLabel="Queue.cpp" index="1">
-<position/>
-</item>
-<item historyLabel="main.cpp" index="0">
-<position info="not_deleted" x="378" y="0"/>
-</item>
-<item historyLabel="Queue.h" index="2">
-<position info="not_deleted" x="331" y="0"/>
-</item>
-<item historyLabel="Queue.cpp" index="1">
-<position info="not_deleted" x="299" y="0"/>
-</item>
-<item historyLabel="Queue.cpp" index="1">
-<position info="not_deleted" x="159" y="0"/>
-</item>
-<item historyLabel="main.cpp" index="0">
-<position info="not_deleted" x="666" y="0"/>
-</item>
-<item historyLabel="Queue.cpp" index="1">
-<position info="not_deleted" x="159" y="0"/>
-</item>
-<item historyLabel="Queue.h" index="2">
-<position info="not_deleted" x="331" y="0"/>
-</item>
-<item historyLabel="Queue.cpp" index="1">
-<position info="not_deleted" x="159" y="0"/>
-</item>
-<item historyLabel="Queue.cpp" index="1">
-<position info="not_deleted" x="780" y="0"/>
-</item>
-<item historyLabel="Queue.cpp" index="1">
-<position info="not_deleted" x="946" y="0"/>
-</item>
-<item historyLabel="Queue.h" index="2">
-<position info="not_deleted" x="331" y="0"/>
-</item>
-<item active="true" historyLabel="main.cpp" index="0">
-<position info="not_deleted" x="666" y="0"/>
+<item active="true" historyLabel="hash.h" index="8">
+<position info="not_deleted" x="0" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -437,6 +425,33 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="hash.cpp" tooltip="HashTable/src/hash.cpp">
+<persistable path="/HashTable/src/hash.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="hash.h" tooltip="HashTable/src/hash.h">
+<persistable path="/HashTable/src/hash.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="list.cpp" tooltip="Linked-List/src/list.cpp">
+<persistable path="/Linked-List/src/list.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="list.h" tooltip="Linked-List/src/list.h">
+<persistable path="/Linked-List/src/list.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.make.editor" name="subdir.mk" tooltip="List-Linked/Debug/src/subdir.mk">
+<persistable path="/List-Linked/Debug/src/subdir.mk"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="List-Linked.cpp" tooltip="List-Linked/src/List-Linked.cpp">
+<persistable path="/List-Linked/src/List-Linked.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="LinkList3.cpp" tooltip="LinkList3/src/LinkList3.cpp">
+<persistable path="/LinkList3/src/LinkList3.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.cpp" tooltip="Linked-List/src/main.cpp">
+<persistable path="/Linked-List/src/main.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Huffman.cpp" tooltip="Huffman/src/Huffman.cpp">
+<persistable path="/Huffman/src/Huffman.cpp"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Queue.h" tooltip="QueueLinkedList/src/Queue.h">
 <persistable path="/QueueLinkedList/src/Queue.h"/>
 </file>
@@ -454,15 +469,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Linked-List.cpp" tooltip="Linked-List/src/Linked-List.cpp">
 <persistable path="/Linked-List/src/Linked-List.cpp"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.cpp" tooltip="Binary-Search-Tree/src/main.cpp">
-<persistable path="/Binary-Search-Tree/src/main.cpp"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="BST.h" tooltip="Binary-Search-Tree/src/BST.h">
-<persistable path="/Binary-Search-Tree/src/BST.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="BST.cpp" tooltip="Binary-Search-Tree/src/BST.cpp">
-<persistable path="/Binary-Search-Tree/src/BST.cpp"/>
 </file>
 </mruList>
 </workbench>

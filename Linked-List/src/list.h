@@ -12,14 +12,14 @@
 class List{
 private:
 
-	typedef struct node {
+	struct node {
 		int data;
 		node * next;
-	} * nodePtr;
+	} ;
 
-	nodePtr head;
-	nodePtr curr;
-	nodePtr temp;
+	node * headptr;
+	node * currptr;
+	node * tempptr;
 
 public:
 	List();

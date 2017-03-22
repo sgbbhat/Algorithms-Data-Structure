@@ -1,0 +1,86 @@
+/*
+ * list.cpp
+ *
+ *  Created on: Feb 3, 2017
+ *      Author: shreeganesh
+ */
+
+#include <iostream>
+#include <cstdlib>
+#include "list.h"
+
+using namespace std;
+
+List::List()
+{
+	headptr = NULL;
+	currptr = NULL;
+	tempptr = NULL;
+}
+
+// Adding a node to the linked list
+void List::addNode(int addData)
+{
+	node * n = new node;
+	n->next = NULL;
+	n->data = addData;
+
+	if(headptr != NULL)
+	{
+		currptr = headptr;
+		while(currptr->next != NULL)
+		{
+			currptr = currptr->next;
+		}
+		currptr->next = n;
+	}
+	else
+	{
+		headptr = n;			// In new node created is the first node
+	}
+}
+
+
+// Deleting a node from the list
+void List::delData(int delData)
+{
+	node * delptr = NULL;
+	temp = head;
+	curr = head;
+
+	while(curr != NULL && curr->data != delData)
+	{
+		temp = curr;
+		curr = curr->next;
+	}
+
+	if(curr == NULL)
+	{
+		cout << delData <<" was not on the list\n";
+		delete delPtr;
+	}
+	else
+	{
+		delPtr = curr;
+		curr = curr->next;
+		temp->next = curr;
+		if(delPtr == head)
+		{
+			head = head->next;
+			temp = NULL;
+		}
+		delete delPtr;
+		cout << delData <<" was deleted\n";
+	}
+}
+
+// Print the entire list
+void List::printList()
+{
+	curr = head;
+	while(curr != NULL)
+	{
+		cout << curr->data <<endl;
+		curr = curr->next;
+	}
+}

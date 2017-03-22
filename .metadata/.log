@@ -325,3 +325,24 @@ org.eclipse.cdt.internal.core.parser.ParserException: Encountered an ambiguous n
 	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:146)
 	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SESSION 2017-03-02 18:45:32.519 -----------------------------------------------
+eclipse.buildId=debbuild
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-03-02 18:48:28.900
+!MESSAGE Indexed 'ListLinked' (2 sources, 148 headers) in 8.79 sec: 12,651 declarations; 20,692 references; 0 unresolved inclusions; 22 syntax errors; 27 unresolved names (0.08%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-03-02 20:08:56.923
+!MESSAGE Indexed 'LinkList3' (1 sources, 148 headers) in 3.54 sec: 12,650 declarations; 20,687 references; 0 unresolved inclusions; 22 syntax errors; 27 unresolved names (0.08%)
+!SESSION 2017-03-02 22:01:21.140 -----------------------------------------------
+eclipse.buildId=debbuild
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-03-02 22:03:10.562
+!MESSAGE Indexed 'List-Linked' (1 sources, 0 headers) in 0.05 sec: 1 declarations; 0 references; 1 unresolved inclusions; 0 syntax errors; 3 unresolved names (75.00%)
